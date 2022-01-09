@@ -31,6 +31,8 @@
 	 						net_worth DECIMAL,
 	 						country VARCHAR(100),
 	 						residence VARCHAR(50),
+	 					    city_of_residence VARCHAR(20),
+						    state_of_residence VARCHAR(20),
 	 	 					citizenship VARCHAR(50),
 	 						source_of_wealth VARCHAR(100),
 	 					    wealth_rank INTEGER,
@@ -61,6 +63,7 @@ CREATE TABLE news_metric (
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
 			);
 
+select * from bronze_billionaire;
 select * from silver_billionaire;
 select * from news_article;
 select * from news_metric;
