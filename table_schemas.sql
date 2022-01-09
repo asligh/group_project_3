@@ -36,12 +36,10 @@
 	 					    city_of_residence VARCHAR(20),
 						    state_of_residence VARCHAR(20),
 	 	 					citizenship VARCHAR(50),
-	 						source_of_wealth VARCHAR(100),
 	 					    wealth_rank INTEGER,
 	 						age INTEGER,
 							relationship_status VARCHAR(50),
 	 						children INTEGER,
-	 				        education VARCHAR(400),
 	 						is_self_made BOOLEAN,
 	 					    geometry VARCHAR(200),
 	 					    longitude VARCHAR(200),
@@ -77,7 +75,6 @@ CREATE TABLE news_metric (
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
 			);
 				
-		
 select * from bronze_billionaire;
 select * from silver_billionaire;
 select * from news_article;
