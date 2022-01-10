@@ -4,22 +4,28 @@ from flask import Flask, render_template
 
 #creating instance of flask
 app = Flask(__name__)
-con = psycopg2.connect(database="", user="postgres", password="", host="127.0.0.1", port="5432")
-cursor = con.cursor()
+
 
 # use postgres to establish commection
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://userid:password@server:1234/db_name'
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)
+
 
 # Route to render index.html template using data from postgres
-@app.route("/", methods=['post', 'get'])
+@app.route("/", 
 def home():
 
     # Find one record of data from the postgres
     cursor.execute("select * from db")
     name = db.find_one()
     print(billionaire)
+    # name = db.Column(db.type, keytype)
+    # location = db.Column(db.type, keytype)
+    # networth = db.Column(db.type, keytype)
+    # county = db.Column(db.type, keytype)
+    # child_count = db.Column(db.type, keytype)
+    # article_count = db.Column(db.type, keytype)
+    # age = db.Column(db.type, keytype)
 
     # Return template and data
     
@@ -28,7 +34,7 @@ def home():
 
 
 # Route to next page
-@app.route('/billionaire', methods=['POST', 'GET'])
+@app.route('/billionaire', 
 def billionaire():
 
     if request.method == 'POST':
