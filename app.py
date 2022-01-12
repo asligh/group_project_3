@@ -8,7 +8,7 @@ import numpy as np
 from flask import Flask, jsonify
 
 
-engine = create_engine("postgresql://postgres:Static2$@localhost:5432/Billionaire")
+engine = create_engine("postgresql://postgres:postgres@localhost:5432/Billionaire")
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -18,8 +18,8 @@ Base.prepare(engine, reflect=True)
 
 # Save references to each table
 Billionaires = Base.classes.silver_billionaire 
-News = Base.classes.news_article
-Metric = Base.classes.news_metric
+#News = Base.classes.news_article
+#Metric = Base.classes.news_metric
 
 # Create our session (link) from Python to the DB
 session = Session(engine)
@@ -112,7 +112,7 @@ def billionaire():
                                 News.url,
                                 News.published_ts,
                                 News.popularity_rank,
-    )
+    ).all()
 
     news_data = []
     for billionaire_id, publication, author, title, url, published_ts, popularity_rank in news_results: 
@@ -129,7 +129,7 @@ def billionaire():
 
     metric_results = session.query(Metric.billionaire_id,
                                 Metric.total_article_count,
-    )
+    ).all()
 
     metric_data = []
     for billionaire_id, total_article_count in metric_results:
