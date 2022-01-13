@@ -47,29 +47,33 @@
 						);	 
 						
 CREATE TABLE source_of_wealth (
+	            id serial PRIMARY KEY,
 				billionaire_id integer NOT NULL,
 				wealth_source VARCHAR(500),
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
 			);
 			
 CREATE TABLE education_history (
+			    id serial PRIMARY KEY,
 				billionaire_id integer NOT NULL,
 				education VARCHAR(500),
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
 			);
 													
 CREATE TABLE news_article (
+	            id serial PRIMARY KEY,
 				billionaire_id INTEGER,
-				publication VARCHAR(500),
-				author VARCHAR(500),
-				title VARCHAR(500),
-				url  VARCHAR(500),
+				publication VARCHAR(1001),
+				author VARCHAR(1002),
+				title VARCHAR(1003),
+				url  VARCHAR(1004),
 				published_ts TIMESTAMP,
 				popularity_rank INTEGER,
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
 			);
 			
 CREATE TABLE news_metric (
+	            id serial PRIMARY KEY,
 				billionaire_id integer NOT NULL,
 				total_article_count integer NOT NULL,
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
