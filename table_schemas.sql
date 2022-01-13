@@ -1,9 +1,9 @@
- DROP TABLE IF EXISTS bronze_billionaire CASCADE;
- DROP TABLE IF EXISTS silver_billionaire CASCADE;
- DROP TABLE IF EXISTS source_of_wealth CASCADE;
- DROP TABLE IF EXISTS education_history CASCADE;
- DROP TABLE IF EXISTS news_metric CASCADE;
- DROP TABLE IF EXISTS news_article CASCADE;
+ DROP TABLE IF EXISTS bronze_billionaire;
+ DROP TABLE IF EXISTS source_of_wealth;
+ DROP TABLE IF EXISTS education_history;
+ DROP TABLE IF EXISTS news_metric;
+ DROP TABLE IF EXISTS news_article;
+ DROP TABLE IF EXISTS silver_billionaire;
  
  --The raw data as stored within the CSV for historical reference
  CREATE TABLE bronze_billionaire (
@@ -30,7 +30,7 @@
 	 					    middle_name VARCHAR(20),
 	 						last_name VARCHAR(20),
 	 						suffix VARCHAR(10),
-	 						net_worth DECIMAL,
+	 						net_worth VARCHAR(20),
 	 						country VARCHAR(100),
 	 						residence VARCHAR(50),
 	 					    city_of_residence VARCHAR(20),
