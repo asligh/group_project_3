@@ -25,7 +25,11 @@ async function main()
         list.push(country)
     }
     let newArray =[... new Set(list)].sort();
-    console.log(newArray)
+
+    //seed the expore button with an initial value
+    countryOptionChanged(newArray[0]);
+
+    //console.log(newArray)
 
     // appending the list to the dropdown
 
