@@ -1,8 +1,17 @@
 // HOME ROUTE
 
+function countryOptionChanged(country)
+{
+    let btnExplore = document.getElementById('btnExplore');
+
+    btnExplore.onclick = function () 
+    {
+       location.href = "./info?id=" + country;
+    };
+ }
+
 async function main() 
 {
-//    alert("Youre in billionaire js");
     let home_url = "/billionaire";
     const home_response = await fetch(home_url);
     const data = await home_response.json();
@@ -22,7 +31,7 @@ async function main()
 
     for (let i = 0; i < newArray.length; i++) {
         text = newArray[i]
-        const section = document.querySelector('#selDataset')
+        const section = document.querySelector('#ddlCountries')
         option = document.createElement("option")
         option.setAttribute("value", text)
         option.textContent = `${text}`
@@ -32,8 +41,10 @@ async function main()
     // age vs. net worth
 
     // age = data.
-
-    
 };
+
+
+
+
 
 main();
