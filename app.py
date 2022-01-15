@@ -1,11 +1,10 @@
-from flask import Flask
+from flask import Flask,render_template, redirect, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 import numpy as np
-from flask import Flask, jsonify
 
 
 engine = create_engine("postgresql://postgres:postgres@localhost:5432/Billionaire")
@@ -27,45 +26,12 @@ session = Session(engine)
 #creating instance of flask
 app = Flask(__name__)
 
-
 # Route to render index.html template using data from postgres
 @app.route("/")
+
 def home():
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
-  
-    result = session.query(Billionaires.billionaire_id,
-                            Billionaires.display_name, 
-                            Billionaires.net_worth, 
-                            Billionaires.country,
-                            Billionaires.wealth_rank,
-                            Billionaires.age,
-                            Billionaires.children,
-                            Billionaires.relationship_status,
-                            Billionaires.is_self_made,
-                            Billionaires.longitude,
-                            Billionaires.latitude
-
-
-    ).all()
-
-    billionaire_data = []
-    for billionaire_id, display_name, net_worth, country, wealth_rank, age, children, relationship_status, is_self_made, longitude, latitude in result:
-        billionaire_dic = {}
-        billionaire_dic['billionaire_id'] = billionaire_id
-        billionaire_dic["display_name"] = display_name
-        billionaire_dic["net_worth"] = net_worth
-        billionaire_dic["county"] = country
-        billionaire_dic["weath_rank"] = wealth_rank
-        billionaire_dic["age"] = age
-        billionaire_dic["children"] = children
-        billionaire_dic["relationship_status"] = relationship_status
-        billionaire_dic["is_self_made"] = is_self_made
-        billionaire_dic["longitude"] = longitude
-        billionaire_dic["latitude"] = latitude
-        billionaire_data.append(billionaire_dic)
-
-    return jsonify(billionaire_data)
+    print("In home route")
+    return render_template("index.html")
 
 # Route to next page
 @app.route('/billionaire') 
@@ -85,7 +51,6 @@ def billionaire():
                             Billionaires.is_self_made,
                             Billionaires.longitude,
                             Billionaires.latitude
-
 
     ).all()
 
@@ -128,7 +93,7 @@ def billionaire():
 
 
     metric_results = session.query(Metric.billionaire_id,
-                                Metric.total_article_count,
+                                   Metric.total_article_count,
     ).all()
 
     metric_data = []
@@ -137,8 +102,6 @@ def billionaire():
         metric_dic["billionaire_id"] = billionaire_id
         metric_dic["total_article_count"] = total_article_count
         metric_data.append(metric_dic)
-
-
 
     return jsonify(billionaire_data, news_data, metric_data)
 
