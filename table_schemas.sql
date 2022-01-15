@@ -63,10 +63,10 @@ CREATE TABLE education_history (
 CREATE TABLE news_article (
 	            id serial PRIMARY KEY,
 				billionaire_id INTEGER,
-				publication VARCHAR(1001),
-				author VARCHAR(1002),
-				title VARCHAR(1003),
-				url  VARCHAR(1004),
+				publication VARCHAR(1000),
+				author VARCHAR(3000),
+				title VARCHAR(2000),
+				url  VARCHAR(3000),
 				published_ts TIMESTAMP,
 				popularity_rank INTEGER,
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
