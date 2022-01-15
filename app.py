@@ -28,10 +28,13 @@ app = Flask(__name__)
 
 # Route to render index.html template using data from postgres
 @app.route("/")
-
 def home():
-    print("In home route")
     return render_template("index.html")
+
+@app.route("/info")
+def info():
+    return render_template("info.html")
+
 
 # Route to next page
 @app.route('/billionaire') 
@@ -90,7 +93,6 @@ def billionaire():
         news_dic["published_ts"] = published_ts
         news_dic["popularity_rank"] = popularity_rank
         news_data.append(news_dic)
-
 
     metric_results = session.query(Metric.billionaire_id,
                                    Metric.total_article_count,
