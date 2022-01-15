@@ -17,8 +17,8 @@ Base.prepare(engine, reflect=True)
 
 # Save references to each table
 Billionaires = Base.classes.silver_billionaire 
-#News = Base.classes.news_article
-#Metric = Base.classes.news_metric
+News         = Base.classes.news_article
+Metric       = Base.classes.news_metric
 
 # Create our session (link) from Python to the DB
 session = Session(engine)
