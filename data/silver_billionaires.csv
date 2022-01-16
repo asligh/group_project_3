@@ -1,101 +1,101 @@
-billionaire_id,display_name,net_worth,country,wealth_rank,age,residence,citizenship,children,is_self_made,geometry,first_name,middle_name,last_name,suffix,city_of_residence,state_of_residence,longitude,latitude
-0,Jeff Bezos,177.0,United States,1,57.0,"Seattle, Washington",United States,4.0,True,POINT (-122.3300624 47.6038321),Jeff,,Bezos,,Seattle,Washington,-122.3300624,47.6038321
-1,Elon Musk,151.0,United States,2,49.0,"Austin, Texas",United States,7.0,True,POINT (-97.74369950000001 30.2711286),Elon,,Musk,,Austin,Texas,-97.74369950000001,30.2711286
-2,Bernard Arnault,150.0,France,3,72.0,"Paris, France",France,5.0,False,POINT (2.3514616 48.8566969),Bernard,,Arnault,,Paris,,2.3514616,48.8566969
-3,Bill Gates,124.0,United States,4,65.0,"Medina, Washington",United States,3.0,True,POINT (-122.2264453 47.620548),Bill,,Gates,,Medina,Washington,-122.2264453,47.620548
-4,Mark Zuckerberg,97.0,United States,5,36.0,"Palo Alto, California",United States,2.0,True,POINT (-122.1598465 37.4443293),Mark,,Zuckerberg,,Palo Alto,California,-122.1598465,37.4443293
-5,Warren Buffett,96.0,United States,6,90.0,"Omaha, Nebraska",United States,3.0,True,POINT (-95.9383758 41.2587459),Warren,,Buffett,,Omaha,Nebraska,-95.9383758,41.2587459
-6,Larry Ellison,93.0,United States,7,76.0,"Lanai, Hawaii",United States,4.0,True,POINT (-156.9029493 20.8305441),Larry,,Ellison,,Lanai,Hawaii,-156.9029493,20.8305441
-7,Larry Page,91.5,United States,8,48.0,"Palo Alto, California",United States,1.0,True,POINT (-122.1598465 37.4443293),Larry,,Page,,Palo Alto,California,-122.1598465,37.4443293
-8,Sergey Brin,89.0,United States,9,47.0,"Los Altos, California",United States,3.0,True,POINT (-122.116578 37.3790629),Sergey,,Brin,,Los Altos,California,-122.116578,37.3790629
-9,Mukesh Ambani,84.5,India,10,64.0,"Mumbai, India",India,3.0,False,POINT (72.8773928 19.0759899),Mukesh,,Ambani,,Mumbai,,72.8773928,19.0759899
-10,Amancio Ortega,77.0,Spain,11,85.0,"La Coruna, Spain",Spain,3.0,True,POINT (-8.3958768 43.3712091),Amancio,,Ortega,,La Coruna,,-8.3958768,43.3712091
-11,Francoise Bettencourt Meyers,73.6,France,12,67.0,"Paris, France",France,2.0,False,POINT (2.3514616 48.8566969),Francoise,Bettencourt,Meyers,,Paris,,2.3514616,48.8566969
-12,Zhong Shanshan,68.9,China,13,66.0,"Hangzhou, China",China,,True,POINT (120.2052342 30.2489634),Zhong,,Shanshan,,Hangzhou,,120.2052342,30.2489634
-13,Steve Ballmer,68.7,United States,14,65.0,"Hunts Point, Washington",United States,3.0,True,POINT (-122.230124 47.6434321),Steve,,Ballmer,,Hunts Point,Washington,-122.230124,47.6434321
-14,Ma Huateng,65.8,China,15,49.0,"Shenzhen, China",China,,True,POINT (114.0543297 22.555454),Ma,,Huateng,,Shenzhen,,114.0543297,22.555454
-15,Carlos Slim Helu,62.8,Mexico,16,81.0,"Mexico City, Mexico",Mexico,6.0,True,POINT (-99.1331785 19.4326296),Carlos,Slim,Helu,,Mexico City,,-99.1331785,19.4326296
-16,Alice Walton,61.8,United States,17,71.0,"Fort Worth, Texas",United States,,False,POINT (-97.33274590000001 32.753177),Alice,,Walton,,Fort Worth,Texas,-97.33274590000001,32.753177
-17,Jim Walton,60.2,United States,18,72.0,"Bentonville, Arkansas",United States,4.0,False,POINT (-94.2088172 36.3728538),Jim,,Walton,,Bentonville,Arkansas,-94.2088172,36.3728538
-18,Rob Walton,59.5,United States,19,76.0,"Bentonville, Arkansas",United States,3.0,False,POINT (-94.2088172 36.3728538),Rob,,Walton,,Bentonville,Arkansas,-94.2088172,36.3728538
-19,Michael Bloomberg,59.0,United States,20,79.0,"New York, New York",United States,2.0,True,POINT (-74.00601519999999 40.7127281),Michael,,Bloomberg,,New York,New York,-74.00601519999999,40.7127281
-20,Colin Zheng Huang,55.3,China,21,41.0,"Shanghai, China",China,,True,POINT (121.4692071 31.2322758),Colin,Zheng,Huang,,Shanghai,,121.4692071,31.2322758
-21,MacKenzie Scott,53.0,United States,22,51.0,"Seattle, Washington",United States,4.0,False,POINT (-122.3300624 47.6038321),MacKenzie,,Scott,,Seattle,Washington,-122.3300624,47.6038321
-22,Daniel Gilbert,51.9,United States,23,59.0,"Franklin, Michigan",United States,5.0,True,POINT (-83.3060432 42.5222567),Daniel,,Gilbert,,Franklin,Michigan,-83.3060432,42.5222567
-23,Gautam Adani,50.5,India,24,58.0,"Ahmedabad, India",India,2.0,True,POINT (72.5797068 23.0216238),Gautam,,Adani,,Ahmedabad,,72.5797068,23.0216238
-24,Phil Knight,49.9,United States,25,83.0,"Hillsboro, Oregon",United States,3.0,True,POINT (-122.989827 45.5228939),Phil,,Knight,,Hillsboro,Oregon,-122.989827,45.5228939
-25,Jack Ma,48.4,China,26,56.0,"Hangzhou, China",China,,True,POINT (120.2052342 30.2489634),Jack,,Ma,,Hangzhou,,120.2052342,30.2489634
-26,Charles Koch,46.4,United States,27,85.0,"Wichita, Kansas",United States,2.0,False,POINT (-97.3375448 37.6922361),Charles,,Koch,,Wichita,Kansas,-97.3375448,37.6922361
-27,Julia Koch,46.4,United States,27,59.0,"New York, New York",United States,3.0,False,POINT (-74.00601519999999 40.7127281),Julia,,Koch,,New York,New York,-74.00601519999999,40.7127281
-28,Masayoshi Son,45.4,Japan,29,63.0,"Tokyo, Japan",Japan,2.0,True,POINT (139.7594549 35.6828387),Masayoshi,,Son,,Tokyo,,139.7594549,35.6828387
-29,Michael Dell,45.1,United States,30,56.0,"Austin, Texas",United States,4.0,True,POINT (-97.74369950000001 30.2711286),Michael,,Dell,,Austin,Texas,-97.74369950000001,30.2711286
-30,Tadashi Yanai,44.1,Japan,31,72.0,"Tokyo, Japan",Japan,2.0,True,POINT (139.7594549 35.6828387),Tadashi,,Yanai,,Tokyo,,139.7594549,35.6828387
-31,François Pinault,42.3,France,32,84.0,"Paris, France",France,3.0,True,POINT (2.3514616 48.8566969),François,,Pinault,,Paris,,2.3514616,48.8566969
-32,David Thomson,41.8,Canada,33,63.0,"Toronto, Canada",Canada,4.0,False,POINT (-79.3839347 43.6534817),David,,Thomson,,Toronto,,-79.3839347,43.6534817
-34,Wang Wei,39.0,China,35,50.0,"Shenzhen, China",China,,True,POINT (114.0543297 22.555454),Wang,,Wei,,Shenzhen,,114.0543297,22.555454
-35,Miriam Adelson,38.2,United States,36,75.0,"Las Vegas, Nevada",United States,5.0,False,POINT (-115.148516 36.1672559),Miriam,,Adelson,,Las Vegas,Nevada,-115.148516,36.1672559
-36,He Xiangjian,37.7,China,37,78.0,"Foshan, China",China,3.0,True,POINT (113.1146335 23.0247687),He,,Xiangjian,,Foshan,,113.1146335,23.0247687
-37,Dieter Schwarz,36.9,Germany,38,81.0,"Neckarsulm, Germany",Germany,2.0,False,POINT (9.224944300000001 49.191735),Dieter,,Schwarz,,Neckarsulm,,9.224944300000001,49.191735
-38,Zhang Yiming,35.6,China,39,37.0,"Beijing, China",China,,True,POINT (116.3912757 39.906217),Zhang,,Yiming,,Beijing,,116.3912757,39.906217
-39,Giovanni Ferrero,35.1,Italy,40,56.0,"Brussels, Belgium",Italy,2.0,False,POINT (4.351697 50.8465573),Giovanni,,Ferrero,,Brussels,,4.351697,50.8465573
-40,Alain Wertheimer,34.5,France,41,72.0,"New York, New York",France,3.0,False,POINT (-74.00601519999999 40.7127281),Alain,,Wertheimer,,New York,,-74.00601519999999,40.7127281
-41,Gerard Wertheimer,34.5,France,41,70.0,"New York, New York",France,2.0,False,POINT (-74.00601519999999 40.7127281),Gerard,,Wertheimer,,New York,,-74.00601519999999,40.7127281
-42,Li Ka-shing,33.7,Hong Kong,43,92.0,Hong Kong,Hong Kong,2.0,True,POINT (114.1628131 22.2793278),Li,,Ka-shing,,Hong Kong,,114.1628131,22.2793278
-43,Qin Yinglin,33.5,China,44,56.0,"Nanyang, China",China,,True,POINT (112.5292693 33.0010496),Qin,,Yinglin,,Nanyang,,112.5292693,33.0010496
-44,William Lei Ding,33.0,China,45,49.0,"Hangzhou, China",China,,True,POINT (120.2052342 30.2489634),William,Lei,Ding,,Hangzhou,,120.2052342,30.2489634
-45,Len Blavatnik,32.0,United States,46,63.0,"London, United Kingdom",United States,,True,POINT (-0.1276474 51.5073219),Len,,Blavatnik,,London,United Kingdom,-0.1276474,51.5073219
-46,Lee Shau Kee,31.7,Hong Kong,47,93.0,"Hong Kong, Hong Kong",Hong Kong,5.0,True,POINT (114.1628131 22.2793278),Lee,Shau,Kee,,Hong Kong,,114.1628131,22.2793278
-47,Jacqueline Mars,31.3,United States,48,81.0,"The Plains, Virginia",United States,3.0,False,POINT (-77.774073 38.8624506),Jacqueline,,Mars,,The Plains,Virginia,-77.774073,38.8624506
-48,John Mars,31.3,United States,48,85.0,"Jackson, Wyoming",United States,3.0,False,POINT (-110.761815 43.479965),John,,Mars,,Jackson,Wyoming,-110.761815,43.479965
-49,Yang Huiyan,29.6,China,50,39.0,"Foshan, China",China,,False,POINT (113.1146335 23.0247687),Yang,,Huiyan,,Foshan,,113.1146335,23.0247687
-50,Alexey Mordashov,29.1,Russia,51,55.0,"Moscow, Russia",Russia,7.0,True,POINT (37.6174943 55.7504461),Alexey,,Mordashov,,Moscow,,37.6174943,55.7504461
-51,Robin Zeng,28.4,Hong Kong,52,52.0,"Ningde, China",Hong Kong,,True,POINT (119.5432715 26.6695006),Robin,,Zeng,,Ningde,,119.5432715,26.6695006
-52,Hui Ka Yan,27.7,China,53,62.0,"Shenzhen, China",China,2.0,True,POINT (114.0543297 22.555454),Hui,Ka,Yan,,Shenzhen,,114.0543297,22.555454
-53,Susanne Klatten,27.7,Germany,53,59.0,"Bad Homburg, Germany",Germany,3.0,False,POINT (8.6287451 50.2227094),Susanne,,Klatten,,Bad Homburg,,8.6287451,50.2227094
-54,Vladimir Potanin,27.0,Russia,55,60.0,"Moscow, Russia",Russia,7.0,True,POINT (37.6174943 55.7504461),Vladimir,,Potanin,,Moscow,,37.6174943,55.7504461
-55,Dietrich Mateschitz,26.9,Austria,56,76.0,"Fuschl am See, Austria",Austria,1.0,True,POINT (13.3027787 47.7963895),Dietrich,,Mateschitz,,Fuschl am See,,13.3027787,47.7963895
-56,Pang Kang,26.4,China,57,65.0,"Foshan, China",China,,True,POINT (113.1146335 23.0247687),Pang,,Kang,,Foshan,,113.1146335,23.0247687
-57,Klaus-Michael Kuehne,26.3,Germany,58,83.0,"Schindellegi, Switzerland",Germany,,False,POINT (8.711202699999999 47.175612),Klaus-Michael,,Kuehne,,Schindellegi,,8.711202699999999,47.175612
-58,Vladimir Lisin,26.2,Russia,59,65.0,"Moscow, Russia",Russia,3.0,True,POINT (37.6174943 55.7504461),Vladimir,,Lisin,,Moscow,,37.6174943,55.7504461
-59,Wang Xing,26.1,China,60,42.0,"Beijing, China",China,,True,POINT (116.3912757 39.906217),Wang,,Xing,,Beijing,,116.3912757,39.906217
-60,German Larrea Mota Velasco,25.9,Mexico,61,67.0,"Mexico City, Mexico",Mexico,,False,POINT (-99.1331785 19.4326296),German,,Velasco,,Mexico City,,-99.1331785,19.4326296
-61,Leonardo Del Vecchio,25.8,Italy,62,85.0,"Milan, Italy",Italy,6.0,True,POINT (9.1905 45.4668),Leonardo,Del,Vecchio,,Milan,,9.1905,45.4668
-62,Takemitsu Takizaki,25.8,Japan,62,75.0,"Osaka, Japan",Japan,,True,POINT (135.490357 34.6198813),Takemitsu,,Takizaki,,Osaka,,135.490357,34.6198813
-63,Leonard Lauder,25.5,United States,64,88.0,"New York, New York",United States,2.0,False,POINT (-74.00601519999999 40.7127281),Leonard,,Lauder,,New York,New York,-74.00601519999999,40.7127281
-64,Thomas Peterffy,25.0,United States,65,76.0,"Palm Beach, Florida",United States,3.0,True,POINT (-80.4494174 26.6279798),Thomas,,Peterffy,,Palm Beach,Florida,-80.4494174,26.6279798
-65,Vagit Alekperov,24.9,Russia,66,70.0,"Moscow, Russia",Russia,1.0,True,POINT (37.6174943 55.7504461),Vagit,,Alekperov,,Moscow,,37.6174943,55.7504461
-66,Leonid Mikhelson,24.9,Russia,66,65.0,"Moscow, Russia",Russia,2.0,True,POINT (37.6174943 55.7504461),Leonid,,Mikhelson,,Moscow,,37.6174943,55.7504461
-67,Jim Simons,24.6,United States,68,83.0,"East Setauket, New York",United States,3.0,True,POINT (-73.10585589999999 40.9418427),Jim,,Simons,,East Setauket,New York,-73.10585589999999,40.9418427
-68,Jiang Rensheng,24.4,China,69,67.0,"Chongqing, China",China,1.0,True,POINT (106.5478767 29.5647398),Jiang,,Rensheng,,Chongqing,,106.5478767,29.5647398
-69,Gina Rinehart,23.6,Australia,70,67.0,"Perth, Australia",Australia,4.0,False,POINT (115.8854007 -31.9938566),Gina,,Rinehart,,Perth,,115.8854007,-31.9938566
-70,Rupert Murdoch,23.5,United States,71,90.0,"New York, New York",United States,6.0,False,POINT (-74.00601519999999 40.7127281),Rupert,,Murdoch,,New York,New York,-74.00601519999999,40.7127281
-71,Shiv Nadar,23.5,India,71,75.0,"Delhi, India",India,1.0,True,POINT (77.2219388 28.6517178),Shiv,,Nadar,,Delhi,,77.2219388,28.6517178
-72,Zhang Zhidong,23.4,China,73,49.0,"Shenzhen, China",China,,True,POINT (114.0543297 22.555454),Zhang,,Zhidong,,Shenzhen,,114.0543297,22.555454
-73,Iris Fontbona,23.3,Chile,74,78.0,"Santiago, Chile",Chile,3.0,False,POINT (-70.65045019999999 -33.4377756),Iris,,Fontbona,,Santiago,,-70.65045019999999,-33.4377756
-74,Lei Jun,23.0,China,75,51.0,"Beijing, China",China,2.0,True,POINT (116.3912757 39.906217),Lei,,Jun,,Beijing,,116.3912757,39.906217
-75,Zhang Yong,23.0,Singapore,75,50.0,"Singapore, Singapore",Singapore,,True,POINT (103.8194992 1.357107),Zhang,,Yong,,Singapore,,103.8194992,1.357107
-76,Richard Qiangdong Liu,22.4,China,77,47.0,"Beijing, China",China,,True,POINT (116.3912757 39.906217),Richard,Qiangdong,Liu,,Beijing,,116.3912757,39.906217
-77,Gennady Timchenko,22.0,Russia,78,68.0,"Moscow, Russia",Russia,3.0,True,POINT (37.6174943 55.7504461),Gennady,,Timchenko,,Moscow,,37.6174943,55.7504461
-78,Stephen Schwarzman,21.9,United States,79,74.0,"New York, New York",United States,3.0,True,POINT (-74.00601519999999 40.7127281),Stephen,,Schwarzman,,New York,New York,-74.00601519999999,40.7127281
-79,Goh Cheng Liang,21.7,Singapore,80,93.0,"Singapore, Singapore",Singapore,3.0,True,POINT (103.8194992 1.357107),Goh,Cheng,Liang,,Singapore,,103.8194992,1.357107
-81,Li Xiting,21.5,Singapore,82,70.0,"Shenzhen, China",Singapore,,True,POINT (114.0543297 22.555454),Li,,Xiting,,Shenzhen,,114.0543297,22.555454
-82,Pierre Omidyar,21.4,United States,83,53.0,"Honolulu, Hawaii",United States,3.0,True,POINT (-157.8556764 21.304547),Pierre,,Omidyar,,Honolulu,Hawaii,-157.8556764,21.304547
-83,Stefan Persson,21.3,Sweden,84,73.0,"Stockholm, Sweden",Sweden,3.0,False,POINT (18.0710935 59.3251172),Stefan,,Persson,,Stockholm,,18.0710935,59.3251172
-84,Abigail Johnson,20.9,United States,85,59.0,"Milton, Massachusetts",United States,2.0,False,POINT (-71.065573 42.2501425),Abigail,,Johnson,,Milton,Massachusetts,-71.065573,42.2501425
-85,R. Budi Hartono,20.5,Indonesia,86,80.0,"Kudus, Indonesia",Indonesia,3.0,False,POINT (110.838189 -6.8170915),R.,Budi,Hartono,,Kudus,,110.838189,-6.8170915
-86,Andrew Forrest,20.4,Australia,87,59.0,"Perth, Australia",Australia,3.0,True,POINT (115.8854007 -31.9938566),Andrew,,Forrest,,Perth,,115.8854007,-31.9938566
-87,Ray Dalio,20.3,United States,88,71.0,"Greenwich, Connecticut",United States,4.0,True,POINT (-73.6284598 41.0264862),Ray,,Dalio,,Greenwich,Connecticut,-73.6284598,41.0264862
-88,Michael Hartono,19.7,Indonesia,89,81.0,"Kudus, Indonesia",Indonesia,4.0,False,POINT (110.838189 -6.8170915),Michael,,Hartono,,Kudus,,110.838189,-6.8170915
-89,Li Shufu,19.7,China,89,57.0,"Hangzhou, China",China,,True,POINT (120.2052342 30.2489634),Li,,Shufu,,Hangzhou,,120.2052342,30.2489634
-90,Zhong Huijuan,19.7,China,89,60.0,"Shanghai, China",China,,True,POINT (121.4692071 31.2322758),Zhong,,Huijuan,,Shanghai,,121.4692071,31.2322758
-91,Xu Hang,19.5,Hong Kong,92,54.0,"Shenzhen, China",Hong Kong,,True,POINT (114.0543297 22.555454),Xu,,Hang,,Shenzhen,,114.0543297,22.555454
-92,Lui Che Woo,19.4,Hong Kong,93,92.0,"Hong Kong, Hong Kong",Hong Kong,5.0,True,POINT (114.1628131 22.2793278),Lui,Che,Woo,,Hong Kong,,114.1628131,22.2793278
-93,Emmanuel Besnier,19.1,France,94,50.0,"Laval, France",France,,False,POINT (-0.7723499 48.0710377),Emmanuel,,Besnier,,Laval,,-0.7723499,48.0710377
-94,Laurene Powell Jobs,19.0,United States,95,57.0,"Palo Alto, California",United States,3.0,False,POINT (-122.1598465 37.4443293),Laurene,Powell,Jobs,,Palo Alto,California,-122.1598465,37.4443293
-95,Eric Schmidt,18.9,United States,96,66.0,"Atherton, California",United States,2.0,True,POINT (-122.2058272 37.453773),Eric,,Schmidt,,Atherton,California,-122.2058272,37.453773
-96,Sun Piaoyang,18.9,China,96,62.0,"Lianyungang, China",China,1.0,True,POINT (119.215813 34.5978596),Sun,,Piaoyang,,Lianyungang,,119.215813,34.5978596
-97,"Theo Albrecht, Jr.",18.8,Germany,98,70.0,"Mulheim an der Ruhr, Germany",Germany,1.0,False,POINT (6.8829192 51.4272925),Theo,,Albrecht,Jr.,Mulheim an der Ruhr,,6.8829192,51.4272925
-98,Alisher Usmanov,18.4,Russia,99,67.0,"Moscow, Russia",Russia,,True,POINT (37.6174943 55.7504461),Alisher,,Usmanov,,Moscow,,37.6174943,55.7504461
-99,Robert Pera,18.3,United States,100,43.0,"San Jose, California",United States,,True,POINT (-121.890583 37.3361905),Robert,,Pera,,San Jose,California,-121.890583,37.3361905
-100,Wu Yajun,18.3,China,100,57.0,"Beijing, China",China,1.0,True,POINT (116.3912757 39.906217),Wu,,Yajun,,Beijing,,116.3912757,39.906217
-101,Fan Hongwei,18.2,China,102,54.0,"Wujiang, China",China,,True,POINT (120.6406744 31.1415158),Fan,,Hongwei,,Wujiang,,120.6406744,31.1415158
+billionaire_id,display_name,net_worth,country,wealth_rank,age,residence,citizenship,relationship_status,children,is_self_made,geometry,first_name,middle_name,last_name,suffix,city_of_residence,state_of_residence,longitude,latitude
+0,Jeff Bezos,177.0,United States,1,57.0,"Seattle, Washington",United States,In Relationship,4.0,True,POINT (-122.3300624 47.6038321),Jeff,,Bezos,,Seattle,Washington,-122.3300624,47.6038321
+1,Elon Musk,151.0,United States,2,49.0,"Austin, Texas",United States,In Relationship,7.0,True,POINT (-97.74369950000001 30.2711286),Elon,,Musk,,Austin,Texas,-97.74369950000001,30.2711286
+2,Bernard Arnault,150.0,France,3,72.0,"Paris, France",France,Married,5.0,False,POINT (2.3514616 48.8566969),Bernard,,Arnault,,Paris,,2.3514616,48.8566969
+3,Bill Gates,124.0,United States,4,65.0,"Medina, Washington",United States,Divorced,3.0,True,POINT (-122.2264453 47.620548),Bill,,Gates,,Medina,Washington,-122.2264453,47.620548
+4,Mark Zuckerberg,97.0,United States,5,36.0,"Palo Alto, California",United States,Married,2.0,True,POINT (-122.1598465 37.4443293),Mark,,Zuckerberg,,Palo Alto,California,-122.1598465,37.4443293
+5,Warren Buffett,96.0,United States,6,90.0,"Omaha, Nebraska",United States,"Widowed, Remarried",3.0,True,POINT (-95.9383758 41.2587459),Warren,,Buffett,,Omaha,Nebraska,-95.9383758,41.2587459
+6,Larry Ellison,93.0,United States,7,76.0,"Lanai, Hawaii",United States,In Relationship,4.0,True,POINT (-156.9029493 20.8305441),Larry,,Ellison,,Lanai,Hawaii,-156.9029493,20.8305441
+7,Larry Page,91.5,United States,8,48.0,"Palo Alto, California",United States,Married,1.0,True,POINT (-122.1598465 37.4443293),Larry,,Page,,Palo Alto,California,-122.1598465,37.4443293
+8,Sergey Brin,89.0,United States,9,47.0,"Los Altos, California",United States,Married,3.0,True,POINT (-122.116578 37.3790629),Sergey,,Brin,,Los Altos,California,-122.116578,37.3790629
+9,Mukesh Ambani,84.5,India,10,64.0,"Mumbai, India",India,Married,3.0,False,POINT (72.8773928 19.0759899),Mukesh,,Ambani,,Mumbai,,72.8773928,19.0759899
+10,Amancio Ortega,77.0,Spain,11,85.0,"La Coruna, Spain",Spain,Married,3.0,True,POINT (-8.3958768 43.3712091),Amancio,,Ortega,,La Coruna,,-8.3958768,43.3712091
+11,Francoise Bettencourt Meyers,73.6,France,12,67.0,"Paris, France",France,Married,2.0,False,POINT (2.3514616 48.8566969),Francoise,Bettencourt,Meyers,,Paris,,2.3514616,48.8566969
+12,Zhong Shanshan,68.9,China,13,66.0,"Hangzhou, China",China,,,True,POINT (120.2052342 30.2489634),Zhong,,Shanshan,,Hangzhou,,120.2052342,30.2489634
+13,Steve Ballmer,68.7,United States,14,65.0,"Hunts Point, Washington",United States,Married,3.0,True,POINT (-122.230124 47.6434321),Steve,,Ballmer,,Hunts Point,Washington,-122.230124,47.6434321
+14,Ma Huateng,65.8,China,15,49.0,"Shenzhen, China",China,Married,,True,POINT (114.0543297 22.555454),Ma,,Huateng,,Shenzhen,,114.0543297,22.555454
+15,Carlos Slim Helu,62.8,Mexico,16,81.0,"Mexico City, Mexico",Mexico,Widowed,6.0,True,POINT (-99.1331785 19.4326296),Carlos,Slim,Helu,,Mexico City,,-99.1331785,19.4326296
+16,Alice Walton,61.8,United States,17,71.0,"Fort Worth, Texas",United States,Divorced,,False,POINT (-97.33274590000001 32.753177),Alice,,Walton,,Fort Worth,Texas,-97.33274590000001,32.753177
+17,Jim Walton,60.2,United States,18,72.0,"Bentonville, Arkansas",United States,Married,4.0,False,POINT (-94.2088172 36.3728538),Jim,,Walton,,Bentonville,Arkansas,-94.2088172,36.3728538
+18,Rob Walton,59.5,United States,19,76.0,"Bentonville, Arkansas",United States,Married,3.0,False,POINT (-94.2088172 36.3728538),Rob,,Walton,,Bentonville,Arkansas,-94.2088172,36.3728538
+19,Michael Bloomberg,59.0,United States,20,79.0,"New York, New York",United States,In Relationship,2.0,True,POINT (-74.00601519999999 40.7127281),Michael,,Bloomberg,,New York,New York,-74.00601519999999,40.7127281
+20,Colin Zheng Huang,55.3,China,21,41.0,"Shanghai, China",China,,,True,POINT (121.4692071 31.2322758),Colin,Zheng,Huang,,Shanghai,,121.4692071,31.2322758
+21,MacKenzie Scott,53.0,United States,22,51.0,"Seattle, Washington",United States,Married,4.0,False,POINT (-122.3300624 47.6038321),MacKenzie,,Scott,,Seattle,Washington,-122.3300624,47.6038321
+22,Daniel Gilbert,51.9,United States,23,59.0,"Franklin, Michigan",United States,Married,5.0,True,POINT (-83.3060432 42.5222567),Daniel,,Gilbert,,Franklin,Michigan,-83.3060432,42.5222567
+23,Gautam Adani,50.5,India,24,58.0,"Ahmedabad, India",India,Married,2.0,True,POINT (72.5797068 23.0216238),Gautam,,Adani,,Ahmedabad,,72.5797068,23.0216238
+24,Phil Knight,49.9,United States,25,83.0,"Hillsboro, Oregon",United States,Married,3.0,True,POINT (-122.989827 45.5228939),Phil,,Knight,,Hillsboro,Oregon,-122.989827,45.5228939
+25,Jack Ma,48.4,China,26,56.0,"Hangzhou, China",China,Married,,True,POINT (120.2052342 30.2489634),Jack,,Ma,,Hangzhou,,120.2052342,30.2489634
+26,Charles Koch,46.4,United States,27,85.0,"Wichita, Kansas",United States,Married,2.0,False,POINT (-97.3375448 37.6922361),Charles,,Koch,,Wichita,Kansas,-97.3375448,37.6922361
+27,Julia Koch,46.4,United States,27,59.0,"New York, New York",United States,Widowed,3.0,False,POINT (-74.00601519999999 40.7127281),Julia,,Koch,,New York,New York,-74.00601519999999,40.7127281
+28,Masayoshi Son,45.4,Japan,29,63.0,"Tokyo, Japan",Japan,Married,2.0,True,POINT (139.7594549 35.6828387),Masayoshi,,Son,,Tokyo,,139.7594549,35.6828387
+29,Michael Dell,45.1,United States,30,56.0,"Austin, Texas",United States,Married,4.0,True,POINT (-97.74369950000001 30.2711286),Michael,,Dell,,Austin,Texas,-97.74369950000001,30.2711286
+30,Tadashi Yanai,44.1,Japan,31,72.0,"Tokyo, Japan",Japan,Married,2.0,True,POINT (139.7594549 35.6828387),Tadashi,,Yanai,,Tokyo,,139.7594549,35.6828387
+31,François Pinault,42.3,France,32,84.0,"Paris, France",France,Married,3.0,True,POINT (2.3514616 48.8566969),François,,Pinault,,Paris,,2.3514616,48.8566969
+32,David Thomson,41.8,Canada,33,63.0,"Toronto, Canada",Canada,Divorced,4.0,False,POINT (-79.3839347 43.6534817),David,,Thomson,,Toronto,,-79.3839347,43.6534817
+34,Wang Wei,39.0,China,35,50.0,"Shenzhen, China",China,,,True,POINT (114.0543297 22.555454),Wang,,Wei,,Shenzhen,,114.0543297,22.555454
+35,Miriam Adelson,38.2,United States,36,75.0,"Las Vegas, Nevada",United States,Widowed,5.0,False,POINT (-115.148516 36.1672559),Miriam,,Adelson,,Las Vegas,Nevada,-115.148516,36.1672559
+36,He Xiangjian,37.7,China,37,78.0,"Foshan, China",China,Married,3.0,True,POINT (113.1146335 23.0247687),He,,Xiangjian,,Foshan,,113.1146335,23.0247687
+37,Dieter Schwarz,36.9,Germany,38,81.0,"Neckarsulm, Germany",Germany,Married,2.0,False,POINT (9.224944300000001 49.191735),Dieter,,Schwarz,,Neckarsulm,,9.224944300000001,49.191735
+38,Zhang Yiming,35.6,China,39,37.0,"Beijing, China",China,,,True,POINT (116.3912757 39.906217),Zhang,,Yiming,,Beijing,,116.3912757,39.906217
+39,Giovanni Ferrero,35.1,Italy,40,56.0,"Brussels, Belgium",Italy,Married,2.0,False,POINT (4.351697 50.8465573),Giovanni,,Ferrero,,Brussels,,4.351697,50.8465573
+40,Alain Wertheimer,34.5,France,41,72.0,"New York, New York",France,Married,3.0,False,POINT (-74.00601519999999 40.7127281),Alain,,Wertheimer,,New York,,-74.00601519999999,40.7127281
+41,Gerard Wertheimer,34.5,France,41,70.0,"New York, New York",France,Married,2.0,False,POINT (-74.00601519999999 40.7127281),Gerard,,Wertheimer,,New York,,-74.00601519999999,40.7127281
+42,Li Ka-shing,33.7,Hong Kong,43,92.0,Hong Kong,Hong Kong,Widowed,2.0,True,POINT (114.1628131 22.2793278),Li,,Ka-shing,,Hong Kong,,114.1628131,22.2793278
+43,Qin Yinglin,33.5,China,44,56.0,"Nanyang, China",China,Married,,True,POINT (112.5292693 33.0010496),Qin,,Yinglin,,Nanyang,,112.5292693,33.0010496
+44,William Lei Ding,33.0,China,45,49.0,"Hangzhou, China",China,,,True,POINT (120.2052342 30.2489634),William,Lei,Ding,,Hangzhou,,120.2052342,30.2489634
+45,Len Blavatnik,32.0,United States,46,63.0,"London, United Kingdom",United States,Married,,True,POINT (-0.1276474 51.5073219),Len,,Blavatnik,,London,United Kingdom,-0.1276474,51.5073219
+46,Lee Shau Kee,31.7,Hong Kong,47,93.0,"Hong Kong, Hong Kong",Hong Kong,Divorced,5.0,True,POINT (114.1628131 22.2793278),Lee,Shau,Kee,,Hong Kong,,114.1628131,22.2793278
+47,Jacqueline Mars,31.3,United States,48,81.0,"The Plains, Virginia",United States,Divorced,3.0,False,POINT (-77.774073 38.8624506),Jacqueline,,Mars,,The Plains,Virginia,-77.774073,38.8624506
+48,John Mars,31.3,United States,48,85.0,"Jackson, Wyoming",United States,Married,3.0,False,POINT (-110.761815 43.479965),John,,Mars,,Jackson,Wyoming,-110.761815,43.479965
+49,Yang Huiyan,29.6,China,50,39.0,"Foshan, China",China,Married,,False,POINT (113.1146335 23.0247687),Yang,,Huiyan,,Foshan,,113.1146335,23.0247687
+50,Alexey Mordashov,29.1,Russia,51,55.0,"Moscow, Russia",Russia,Married,7.0,True,POINT (37.6174943 55.7504461),Alexey,,Mordashov,,Moscow,,37.6174943,55.7504461
+51,Robin Zeng,28.4,Hong Kong,52,52.0,"Ningde, China",Hong Kong,,,True,POINT (119.5432715 26.6695006),Robin,,Zeng,,Ningde,,119.5432715,26.6695006
+52,Hui Ka Yan,27.7,China,53,62.0,"Shenzhen, China",China,Married,2.0,True,POINT (114.0543297 22.555454),Hui,Ka,Yan,,Shenzhen,,114.0543297,22.555454
+53,Susanne Klatten,27.7,Germany,53,59.0,"Bad Homburg, Germany",Germany,Married,3.0,False,POINT (8.6287451 50.2227094),Susanne,,Klatten,,Bad Homburg,,8.6287451,50.2227094
+54,Vladimir Potanin,27.0,Russia,55,60.0,"Moscow, Russia",Russia,Married,7.0,True,POINT (37.6174943 55.7504461),Vladimir,,Potanin,,Moscow,,37.6174943,55.7504461
+55,Dietrich Mateschitz,26.9,Austria,56,76.0,"Fuschl am See, Austria",Austria,Single,1.0,True,POINT (13.3027787 47.7963895),Dietrich,,Mateschitz,,Fuschl am See,,13.3027787,47.7963895
+56,Pang Kang,26.4,China,57,65.0,"Foshan, China",China,,,True,POINT (113.1146335 23.0247687),Pang,,Kang,,Foshan,,113.1146335,23.0247687
+57,Klaus-Michael Kuehne,26.3,Germany,58,83.0,"Schindellegi, Switzerland",Germany,Married,,False,POINT (8.711202699999999 47.175612),Klaus-Michael,,Kuehne,,Schindellegi,,8.711202699999999,47.175612
+58,Vladimir Lisin,26.2,Russia,59,65.0,"Moscow, Russia",Russia,Married,3.0,True,POINT (37.6174943 55.7504461),Vladimir,,Lisin,,Moscow,,37.6174943,55.7504461
+59,Wang Xing,26.1,China,60,42.0,"Beijing, China",China,,,True,POINT (116.3912757 39.906217),Wang,,Xing,,Beijing,,116.3912757,39.906217
+60,German Larrea Mota Velasco,25.9,Mexico,61,67.0,"Mexico City, Mexico",Mexico,Married,,False,POINT (-99.1331785 19.4326296),German,,Velasco,,Mexico City,,-99.1331785,19.4326296
+61,Leonardo Del Vecchio,25.8,Italy,62,85.0,"Milan, Italy",Italy,Married,6.0,True,POINT (9.1905 45.4668),Leonardo,Del,Vecchio,,Milan,,9.1905,45.4668
+62,Takemitsu Takizaki,25.8,Japan,62,75.0,"Osaka, Japan",Japan,Married,,True,POINT (135.490357 34.6198813),Takemitsu,,Takizaki,,Osaka,,135.490357,34.6198813
+63,Leonard Lauder,25.5,United States,64,88.0,"New York, New York",United States,"Widowed, Remarried",2.0,False,POINT (-74.00601519999999 40.7127281),Leonard,,Lauder,,New York,New York,-74.00601519999999,40.7127281
+64,Thomas Peterffy,25.0,United States,65,76.0,"Palm Beach, Florida",United States,Divorced,3.0,True,POINT (-80.4494174 26.6279798),Thomas,,Peterffy,,Palm Beach,Florida,-80.4494174,26.6279798
+65,Vagit Alekperov,24.9,Russia,66,70.0,"Moscow, Russia",Russia,Married,1.0,True,POINT (37.6174943 55.7504461),Vagit,,Alekperov,,Moscow,,37.6174943,55.7504461
+66,Leonid Mikhelson,24.9,Russia,66,65.0,"Moscow, Russia",Russia,Married,2.0,True,POINT (37.6174943 55.7504461),Leonid,,Mikhelson,,Moscow,,37.6174943,55.7504461
+67,Jim Simons,24.6,United States,68,83.0,"East Setauket, New York",United States,Married,3.0,True,POINT (-73.10585589999999 40.9418427),Jim,,Simons,,East Setauket,New York,-73.10585589999999,40.9418427
+68,Jiang Rensheng,24.4,China,69,67.0,"Chongqing, China",China,Married,1.0,True,POINT (106.5478767 29.5647398),Jiang,,Rensheng,,Chongqing,,106.5478767,29.5647398
+69,Gina Rinehart,23.6,Australia,70,67.0,"Perth, Australia",Australia,Widowed,4.0,False,POINT (115.8854007 -31.9938566),Gina,,Rinehart,,Perth,,115.8854007,-31.9938566
+70,Rupert Murdoch,23.5,United States,71,90.0,"New York, New York",United States,Married,6.0,False,POINT (-74.00601519999999 40.7127281),Rupert,,Murdoch,,New York,New York,-74.00601519999999,40.7127281
+71,Shiv Nadar,23.5,India,71,75.0,"Delhi, India",India,Married,1.0,True,POINT (77.2219388 28.6517178),Shiv,,Nadar,,Delhi,,77.2219388,28.6517178
+72,Zhang Zhidong,23.4,China,73,49.0,"Shenzhen, China",China,,,True,POINT (114.0543297 22.555454),Zhang,,Zhidong,,Shenzhen,,114.0543297,22.555454
+73,Iris Fontbona,23.3,Chile,74,78.0,"Santiago, Chile",Chile,Widowed,3.0,False,POINT (-70.65045019999999 -33.4377756),Iris,,Fontbona,,Santiago,,-70.65045019999999,-33.4377756
+74,Lei Jun,23.0,China,75,51.0,"Beijing, China",China,Married,2.0,True,POINT (116.3912757 39.906217),Lei,,Jun,,Beijing,,116.3912757,39.906217
+75,Zhang Yong,23.0,Singapore,75,50.0,"Singapore, Singapore",Singapore,Married,,True,POINT (103.8194992 1.357107),Zhang,,Yong,,Singapore,,103.8194992,1.357107
+76,Richard Qiangdong Liu,22.4,China,77,47.0,"Beijing, China",China,Married,,True,POINT (116.3912757 39.906217),Richard,Qiangdong,Liu,,Beijing,,116.3912757,39.906217
+77,Gennady Timchenko,22.0,Russia,78,68.0,"Moscow, Russia",Russia,Married,3.0,True,POINT (37.6174943 55.7504461),Gennady,,Timchenko,,Moscow,,37.6174943,55.7504461
+78,Stephen Schwarzman,21.9,United States,79,74.0,"New York, New York",United States,Married,3.0,True,POINT (-74.00601519999999 40.7127281),Stephen,,Schwarzman,,New York,New York,-74.00601519999999,40.7127281
+79,Goh Cheng Liang,21.7,Singapore,80,93.0,"Singapore, Singapore",Singapore,Widowed,3.0,True,POINT (103.8194992 1.357107),Goh,Cheng,Liang,,Singapore,,103.8194992,1.357107
+81,Li Xiting,21.5,Singapore,82,70.0,"Shenzhen, China",Singapore,,,True,POINT (114.0543297 22.555454),Li,,Xiting,,Shenzhen,,114.0543297,22.555454
+82,Pierre Omidyar,21.4,United States,83,53.0,"Honolulu, Hawaii",United States,Married,3.0,True,POINT (-157.8556764 21.304547),Pierre,,Omidyar,,Honolulu,Hawaii,-157.8556764,21.304547
+83,Stefan Persson,21.3,Sweden,84,73.0,"Stockholm, Sweden",Sweden,Married,3.0,False,POINT (18.0710935 59.3251172),Stefan,,Persson,,Stockholm,,18.0710935,59.3251172
+84,Abigail Johnson,20.9,United States,85,59.0,"Milton, Massachusetts",United States,Married,2.0,False,POINT (-71.065573 42.2501425),Abigail,,Johnson,,Milton,Massachusetts,-71.065573,42.2501425
+85,R. Budi Hartono,20.5,Indonesia,86,80.0,"Kudus, Indonesia",Indonesia,Married,3.0,False,POINT (110.838189 -6.8170915),R.,Budi,Hartono,,Kudus,,110.838189,-6.8170915
+86,Andrew Forrest,20.4,Australia,87,59.0,"Perth, Australia",Australia,Married,3.0,True,POINT (115.8854007 -31.9938566),Andrew,,Forrest,,Perth,,115.8854007,-31.9938566
+87,Ray Dalio,20.3,United States,88,71.0,"Greenwich, Connecticut",United States,Married,4.0,True,POINT (-73.6284598 41.0264862),Ray,,Dalio,,Greenwich,Connecticut,-73.6284598,41.0264862
+88,Michael Hartono,19.7,Indonesia,89,81.0,"Kudus, Indonesia",Indonesia,Married,4.0,False,POINT (110.838189 -6.8170915),Michael,,Hartono,,Kudus,,110.838189,-6.8170915
+89,Li Shufu,19.7,China,89,57.0,"Hangzhou, China",China,Married,,True,POINT (120.2052342 30.2489634),Li,,Shufu,,Hangzhou,,120.2052342,30.2489634
+90,Zhong Huijuan,19.7,China,89,60.0,"Shanghai, China",China,Married,,True,POINT (121.4692071 31.2322758),Zhong,,Huijuan,,Shanghai,,121.4692071,31.2322758
+91,Xu Hang,19.5,Hong Kong,92,54.0,"Shenzhen, China",Hong Kong,,,True,POINT (114.0543297 22.555454),Xu,,Hang,,Shenzhen,,114.0543297,22.555454
+92,Lui Che Woo,19.4,Hong Kong,93,92.0,"Hong Kong, Hong Kong",Hong Kong,Married,5.0,True,POINT (114.1628131 22.2793278),Lui,Che,Woo,,Hong Kong,,114.1628131,22.2793278
+93,Emmanuel Besnier,19.1,France,94,50.0,"Laval, France",France,,,False,POINT (-0.7723499 48.0710377),Emmanuel,,Besnier,,Laval,,-0.7723499,48.0710377
+94,Laurene Powell Jobs,19.0,United States,95,57.0,"Palo Alto, California",United States,Widowed,3.0,False,POINT (-122.1598465 37.4443293),Laurene,Powell,Jobs,,Palo Alto,California,-122.1598465,37.4443293
+95,Eric Schmidt,18.9,United States,96,66.0,"Atherton, California",United States,Married,2.0,True,POINT (-122.2058272 37.453773),Eric,,Schmidt,,Atherton,California,-122.2058272,37.453773
+96,Sun Piaoyang,18.9,China,96,62.0,"Lianyungang, China",China,Married,1.0,True,POINT (119.215813 34.5978596),Sun,,Piaoyang,,Lianyungang,,119.215813,34.5978596
+97,"Theo Albrecht, Jr.",18.8,Germany,98,70.0,"Mulheim an der Ruhr, Germany",Germany,,1.0,False,POINT (6.8829192 51.4272925),Theo,,Albrecht,Jr.,Mulheim an der Ruhr,,6.8829192,51.4272925
+98,Alisher Usmanov,18.4,Russia,99,67.0,"Moscow, Russia",Russia,Married,,True,POINT (37.6174943 55.7504461),Alisher,,Usmanov,,Moscow,,37.6174943,55.7504461
+99,Robert Pera,18.3,United States,100,43.0,"San Jose, California",United States,Single,,True,POINT (-121.890583 37.3361905),Robert,,Pera,,San Jose,California,-121.890583,37.3361905
+100,Wu Yajun,18.3,China,100,57.0,"Beijing, China",China,Divorced,1.0,True,POINT (116.3912757 39.906217),Wu,,Yajun,,Beijing,,116.3912757,39.906217
+101,Fan Hongwei,18.2,China,102,54.0,"Wujiang, China",China,Married,,True,POINT (120.6406744 31.1415158),Fan,,Hongwei,,Wujiang,,120.6406744,31.1415158
