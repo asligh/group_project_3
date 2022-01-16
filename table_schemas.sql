@@ -3,6 +3,7 @@
  DROP TABLE IF EXISTS education_history;
  DROP TABLE IF EXISTS news_metric;
  DROP TABLE IF EXISTS news_article;
+ DROP TABLE IF EXISTS relationship;
  DROP TABLE IF EXISTS silver_billionaire;
  
  --The raw data as stored within the CSV for historical reference
@@ -78,11 +79,20 @@ CREATE TABLE news_metric (
 				total_article_count integer NOT NULL,
 				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
 			);
-				
+			
+CREATE TABLE relationship (
+	            id serial PRIMARY KEY,
+				billionaire_id integer NOT NULL,
+				status VARCHAR(500) NOT NULL,
+				FOREIGN KEY (billionaire_id) REFERENCES silver_billionaire(billionaire_id)
+			);			
+			
 select * from bronze_billionaire;
 select * from silver_billionaire;
 select * from news_article;
 select * from news_metric;
 select * from source_of_wealth;
 select * from education_history;
+select * from relationship;
+
 select 'success' as status;
