@@ -6,7 +6,6 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 import numpy as np
 
-
 engine = create_engine("postgresql://postgres:postgres@localhost:5432/Billionaire")
 
 # reflect an existing database into a new model
@@ -19,6 +18,7 @@ Base.prepare(engine, reflect=True)
 Billionaires = Base.classes.silver_billionaire 
 News         = Base.classes.news_article
 Metric       = Base.classes.news_metric
+Relationship = Base.classes.relationship
 
 # Create our session (link) from Python to the DB
 session = Session(engine)
@@ -43,6 +43,11 @@ def billionaire():
 # Create our session (link) from Python to the DB
     session = Session(engine)
   
+    #######################################################
+    #                                                     #
+    #                 Billionaire Data                    #
+    #                                                     #
+    #######################################################
     result = session.query(Billionaires.billionaire_id,
                             Billionaires.display_name, 
                             Billionaires.net_worth, 
@@ -73,13 +78,19 @@ def billionaire():
         billionaire_dic["latitude"] = latitude
         billionaire_data.append(billionaire_dic)
 
+    #######################################################
+    #                                                     #
+    #                      News Data                      #
+    #                                                     #
+    #######################################################
+
     news_results = session.query(News.billionaire_id,
-                                News.publication,
-                                News.author,
-                                News.title,
-                                News.url,
-                                News.published_ts,
-                                News.popularity_rank,
+                                 News.publication,
+                                 News.author,
+                                 News.title,
+                                 News.url,
+                                 News.published_ts,
+                                 News.popularity_rank,
     ).all()
 
     news_data = []
@@ -94,6 +105,12 @@ def billionaire():
         news_dic["popularity_rank"] = popularity_rank
         news_data.append(news_dic)
 
+    #######################################################
+    #                                                     #
+    #                   News Metric Data                  #
+    #                                                     #
+    #######################################################
+
     metric_results = session.query(Metric.billionaire_id,
                                    Metric.total_article_count,
     ).all()
@@ -105,7 +122,27 @@ def billionaire():
         metric_dic["total_article_count"] = total_article_count
         metric_data.append(metric_dic)
 
-    return jsonify(billionaire_data, news_data, metric_data)
+    #######################################################
+    #                                                     #
+    #                  Relationship Data                  #
+    #                                                     #
+    #######################################################
+
+    relationship_results = session.query(Relationship.billionaire_id,
+                                         Relationship.status
+    ).all()
+
+    relationship_data = []
+    for billionaire_id, status in relationship_results:
+        relationship_dic = {}
+        relationship_dic["billionaire_id"] = billionaire_id
+        relationship_dic["status"] = status
+        relationship_data.append(relationship_dic)
+
+    return jsonify(billionaire_data, 
+                   news_data, 
+                   metric_data,
+                   relationship_data)
 
 if __name__ == '__main__':
     app.run(debug=True)
