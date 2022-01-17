@@ -41,6 +41,11 @@ async function initializePage(country)
        let text  = indBillionaires[x]["billionaire_name"];
        let value = indBillionaires[x]["billionaire_id"];
 
+      if(x==0)
+      {
+        loadNewsArticles(value);
+      }      
+
        option = document.createElement("option");
        option.setAttribute("value", value);
        option.textContent = `${text}`;
@@ -54,9 +59,42 @@ async function initializePage(country)
   }
 };
 
-function optionChanged(billionaire_id)
+async function loadNewsArticles(billionaire_id)
 {
-  alert('billionaire id is ' + billionaire_id)
+  let info_url = "/get_articles_by_id/"+billionaire_id;
+  const info_response = await fetch(info_url);
+  const data = await info_response.json();
+
+  console.log(data);
+
+  displayNewsArticles(data);
+}
+
+function displayNewsArticles(data)
+{
+  document.getElementById("tbArticles").innerHTML = null;
+  let table = document.getElementById("tbArticles");
+
+  for(i=0;i < data.length; i++)
+  {
+    let article_title = data[i]["title"];
+    let url           = data[i]["url"];
+
+    let row = table.insertRow(i);
+
+    let cell1 = row.insertCell(0);
+    //let cell2 = row.insertCell(1);
+
+    cell1.innerHTML = article_title;
+    //cell2.innerHTML = "NEW CELL2";  
+
+    cell1.innerHTML = '<a href="'+ url+'" target="_blank">'+ article_title + '</a>';
+  }
+}
+
+async function optionChanged(billionaire_id)
+{
+  //alert('billionaire id is ' + billionaire_id)
   loadNewsArticles(billionaire_id)
 };
 
