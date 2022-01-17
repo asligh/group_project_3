@@ -36,6 +36,38 @@ def info():
     return render_template("info.html")
 
 
+@app.route("/get_articles_by_id/<id>")
+def get_articles_by_id(id=-1):
+
+    session = Session(engine)
+
+    news_results = session.query(News.billionaire_id,
+                                 News.publication,
+                                 News.author,
+                                 News.title,
+                                 News.url,
+                                 News.published_ts,
+                                 News.popularity_rank).filter_by(billionaire_id=id).order_by(News.popularity_rank).limit(5)
+
+    news_data = []
+
+    for billionaire_id, publication, author, title, url, published_ts, popularity_rank in news_results: 
+        
+        news_dic = {}
+
+        news_dic["billionaire_id"]  = billionaire_id
+        news_dic["publication"]     = publication
+        news_dic["author"]          = author
+        news_dic["title"]           = title
+        news_dic["url"]             = url
+        news_dic["published_ts"]    = published_ts
+        news_dic["popularity_rank"] = popularity_rank
+        
+        news_data.append(news_dic)
+    
+    return jsonify(news_data)
+
+
 # Route to next page
 @app.route('/billionaire') 
 def billionaire():
