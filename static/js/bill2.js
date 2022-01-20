@@ -3,21 +3,20 @@
 async function initializePage(country) {
   let indBillionaires = [];
 
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-  const selected_country = urlParams.get('id');
-
-  let info_url = "/billionaire";
-  const info_response = await fetch(info_url);
-  const data = await info_response.json();
-  console.log(data)
-  data_name = []
-  data_wealth = []
-  data_age = []
-  data_selfm = []
-
   async function loadBillionairesByCountry() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const selected_country = urlParams.get('id');
 
+    let info_url = "/billionaire";
+    const info_response = await fetch(info_url);
+    const data = await info_response.json();
+
+    // setting up data lists (for other countries) for the bubble chart later on
+    data_name = []
+    data_wealth = []
+    data_age = []
+    data_selfm = []
 
     for (let i = 0; i < data[0].length; i++) {
 
@@ -34,7 +33,6 @@ async function initializePage(country) {
         dSelfm = data[0][i].is_self_made
         data_selfm.push(dSelfm)
       }
-
       if (selected_country == data[0][i].county) {
         let billionaire_id = data[0][i].billionaire_id;
         let billionaire_name = data[0][i].display_name;
@@ -42,6 +40,7 @@ async function initializePage(country) {
         let billionaire_age = data[0][i].age;
         let billionaire_selfm = data[0][i].is_self_made;
         let billionaire_map = { "billionaire_id": billionaire_id, "billionaire_name": billionaire_name, "billionaire_wealth": billionaire_wealth, "age": billionaire_age, "self_made": billionaire_selfm };
+
         indBillionaires.push(billionaire_map);
       }
     }
@@ -59,40 +58,22 @@ async function initializePage(country) {
       let text = indBillionaires[x]["billionaire_name"];
       let value = indBillionaires[x]["billionaire_id"];
 
+      if (x == 0) {
+        loadNewsArticles(value);
+      }
+
       option = document.createElement("option");
       option.setAttribute("value", value);
       option.textContent = `${text}`;
       section.append(option);
     }
 
-  }
-
-  if (indBillionaires.length == 0) {
-    loadBillionairesByCountry(country);
-  }
-
-  // create the needed selected country info in list format for plotly consumption
+    // create the needed selected country info in list format for plotly consumption
 
   bill_name = []
   bill_wealth = []
   bill_age = []
   bill_selfm = []
-
-  for (r = 0; r < indBillionaires.length; r++) {
-
-    bName = indBillionaires[r].billionaire_name
-    bill_name.push(bName)
-
-    bWealth = indBillionaires[r].billionaire_wealth
-    bill_wealth.push(bWealth)
-
-    bAge = indBillionaires[r].age
-    bill_age.push(bAge)
-
-    bSelfm = indBillionaires[r].self_made
-    bill_selfm.push(bSelfm)
-
-  }
 
   //  set up the bubble charts with info from both the selected country and all countries
 
@@ -143,11 +124,63 @@ async function initializePage(country) {
   Plotly.newPlot('bubble', final_data, default_bubble_lay);
 
 
+  for (r = 0; r < indBillionaires.length; r++) {
+
+    bName = indBillionaires[r].billionaire_name
+    bill_name.push(bName)
+
+    bWealth = indBillionaires[r].billionaire_wealth
+    bill_wealth.push(bWealth)
+
+    bAge = indBillionaires[r].age
+    bill_age.push(bAge)
+
+    bSelfm = indBillionaires[r].self_made
+    bill_selfm.push(bSelfm)
+
+  }
+  
+  if (indBillionaires.length == 0) {
+    loadBillionairesByCountry(country);
+  }
+
 };
 
-function optionChanged(billionaire_id) {
-  alert('billionaire id is ' + billionaire_id)
+async function loadNewsArticles(billionaire_id) {
+  let info_url = "/get_articles_by_id/" + billionaire_id;
+  const info_response = await fetch(info_url);
+  const data = await info_response.json();
+
+  console.log(data);
+
+  displayNewsArticles(data);
+}
+
+function displayNewsArticles(data) {
+  document.getElementById("tbArticles").innerHTML = null;
+  let table = document.getElementById("tbArticles");
+
+  for (i = 0; i < data.length; i++) {
+    let article_title = data[i]["title"];
+    let url = data[i]["url"];
+
+    let row = table.insertRow(i);
+
+    let cell1 = row.insertCell(0);
+    //let cell2 = row.insertCell(1);
+
+    cell1.innerHTML = article_title;
+    //cell2.innerHTML = "NEW CELL2";  
+
+    cell1.innerHTML = '<a href="' + url + '" target="_blank">' + article_title + '</a>';
+  }
+}
+
+async function optionChanged(billionaire_id) {
+  //alert('billionaire id is ' + billionaire_id)
   loadNewsArticles(billionaire_id)
 };
+
+}
 
 initializePage();
