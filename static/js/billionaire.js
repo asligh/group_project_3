@@ -183,8 +183,8 @@ async function loadBillionairesByCountry()
 
 
     // color values for pie chart
-    var pieColors =[ ['#f6eff7', '#d0d1e6', '#a6bddb', '#67a9cf', '#3690c0', '#02818a', '#016450'],
-    ['#ffffb2', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026' ]
+    var pieColors =[ ['#F7F7F7','#D9D9D9','#BDBDBD','#969696','#737373','#525252','#252525'],
+    ['#EDF8E9','#C7E9C0','#A1D99B','#74C476','#41AB5D','#238B45','#005A32' ]
     ];
     
 
@@ -273,7 +273,7 @@ async function loadBillionairesByCountry()
         name: 'Global',
         type: 'bar',
         marker: {
-            color: '##7fcdbb',
+            color: 'grey',
             opacity: 0.7,
           }
     };
@@ -293,7 +293,7 @@ async function loadBillionairesByCountry()
         name: countryTitle,
         type: 'bar',
         marker: {
-            color: '#2c7fb8',
+            color: 'green',
             opacity: 0.5
           },
           ticks: {
@@ -308,7 +308,7 @@ async function loadBillionairesByCountry()
     var layout2 = {barmode: 'group',
                     title: "Children by Relationship Status",
                     xaxis: {
-                        tickangle: -45
+                        tickangle: -25
                       },
                     width: 800,
                     height: 600,
