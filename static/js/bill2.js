@@ -1,5 +1,3 @@
-//js file for the info.html page
-
 async function initializePage(country) {
   let indBillionaires = [];
 
@@ -19,7 +17,6 @@ async function initializePage(country) {
     data_selfm = []
 
     for (let i = 0; i < data[0].length; i++) {
-
       if (!(selected_country == data[0][i].county)) {
         dName = data[0][i].display_name;
         data_name.push(dName)
@@ -33,6 +30,7 @@ async function initializePage(country) {
         dSelfm = data[0][i].is_self_made
         data_selfm.push(dSelfm)
       }
+
       if (selected_country == data[0][i].county) {
         let billionaire_id = data[0][i].billionaire_id;
         let billionaire_name = data[0][i].display_name;
@@ -67,83 +65,79 @@ async function initializePage(country) {
       option.textContent = `${text}`;
       section.append(option);
     }
-
     // create the needed selected country info in list format for plotly consumption
 
-  bill_name = []
-  bill_wealth = []
-  bill_age = []
-  bill_selfm = []
+    bill_name = []
+    bill_wealth = []
+    bill_age = []
+    bill_selfm = []
 
-  //  set up the bubble charts with info from both the selected country and all countries
+    //  set up the bubble charts with info from both the selected country and all countries
+    for (r = 0; r < indBillionaires.length; r++) {
 
-  let trace1 = {
-    x: bill_age,
-    y: bill_wealth,
-    mode: 'markers',
-    marker: {
-      color: "green",
-      size: bill_wealth
-    },
-    text: bill_name,
-    name: selected_country
-  };
+      bName = indBillionaires[r].billionaire_name
+      bill_name.push(bName)
 
-  let trace2 = {
-    x: data_age,
-    y: data_wealth,
-    mode: 'markers',
-    marker: {
-      color: "grey",
-      size: data_wealth
-    },
-    text: data_name,
-    name: 'Other Countries'
-  };
+      bWealth = indBillionaires[r].billionaire_wealth
+      bill_wealth.push(bWealth)
 
-  let final_data = [trace1, trace2];
+      bAge = indBillionaires[r].age
+      bill_age.push(bAge)
 
+      bSelfm = indBillionaires[r].self_made
+      bill_selfm.push(bSelfm)
+    }
 
-  var default_bubble_lay = {
-    title: `${selected_country}'s Billionaires Compared to Those of Other Countries: Age and Net Worth`,
-    xaxis: {
-      title: {
-        text: 'Age'
+    let trace1 = {
+      x: bill_age,
+      y: bill_wealth,
+      mode: 'markers',
+      marker: {
+        color: "green",
+        size: bill_wealth
       },
-    },
-    yaxis: {
-      title: {
-        text: 'Net Worth (in billions of USD)'
+      text: bill_name,
+      name: selected_country
+    };
+
+    let trace2 = {
+      x: data_age,
+      y: data_wealth,
+      mode: 'markers',
+      marker: {
+        color: "grey",
+        size: data_wealth
       },
-    },
-    showlegend: true,
-    height: 600,
-    width: 1000
-  };
+      text: data_name,
+      name: 'Other Countries'
+    };
 
-  Plotly.newPlot('bubble', final_data, default_bubble_lay);
+    let final_data = [trace1, trace2];
 
 
-  for (r = 0; r < indBillionaires.length; r++) {
+    var default_bubble_lay = {
+      title: `${selected_country}'s Billionaires Compared to Those of Other Countries: Age and Net Worth`,
+      xaxis: {
+        title: {
+          text: 'Age'
+        },
+      },
+      yaxis: {
+        title: {
+          text: 'Net Worth (in billions of USD)'
+        },
+      },
+      showlegend: true,
+      height: 600,
+      width: 1000
+    };
 
-    bName = indBillionaires[r].billionaire_name
-    bill_name.push(bName)
-
-    bWealth = indBillionaires[r].billionaire_wealth
-    bill_wealth.push(bWealth)
-
-    bAge = indBillionaires[r].age
-    bill_age.push(bAge)
-
-    bSelfm = indBillionaires[r].self_made
-    bill_selfm.push(bSelfm)
-
+    Plotly.newPlot('bubble', final_data, default_bubble_lay);
   }
-  
+
   if (indBillionaires.length == 0) {
     loadBillionairesByCountry(country);
   }
-
 };
 
 async function loadNewsArticles(billionaire_id) {
@@ -180,7 +174,5 @@ async function optionChanged(billionaire_id) {
   //alert('billionaire id is ' + billionaire_id)
   loadNewsArticles(billionaire_id)
 };
-
-}
 
 initializePage();
