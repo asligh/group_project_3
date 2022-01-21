@@ -15,7 +15,7 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save references to each table
-Billionaires = Base.classes.silver_billionaire 
+Billionaires = Base.classes.silver_billionaire
 News         = Base.classes.news_article
 Metric       = Base.classes.news_metric
 Relationship = Base.classes.relationship
@@ -35,6 +35,29 @@ def home():
 def info():
     return render_template("info.html")
 
+@app.route("/get_billionaire_by_id/<id>")
+def get_billionaire_by_id(id=-1):
+
+    session = Session(engine)
+
+    result = session.query(Billionaires.net_worth, 
+                           Billionaires.country,
+                           Billionaires.wealth_rank,
+                           Billionaires.age,
+                           Billionaires.is_self_made).filter_by(billionaire_id=id)
+
+
+    billionaire_dic = {}
+
+    for net_worth, country, wealth_rank, age, is_self_made in result:
+
+        billionaire_dic["Net Worth"]    = f"${net_worth} bill"
+        billionaire_dic["Country"]      = country
+        billionaire_dic["Rank"]         = wealth_rank
+        billionaire_dic["Age"]          = age
+        billionaire_dic["Self Made"]   = "No" if is_self_made == False else "Yes"
+
+    return jsonify(billionaire_dic)
 
 @app.route("/get_articles_by_id/<id>")
 def get_articles_by_id(id=-1):
@@ -100,7 +123,7 @@ def billionaire():
         billionaire_dic['billionaire_id'] = billionaire_id
         billionaire_dic["display_name"] = display_name
         billionaire_dic["net_worth"] = net_worth
-        billionaire_dic["county"] = country
+        billionaire_dic["country"] = country
         billionaire_dic["weath_rank"] = wealth_rank
         billionaire_dic["age"] = age
         billionaire_dic["children"] = children
