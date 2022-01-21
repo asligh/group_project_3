@@ -235,8 +235,8 @@ async function loadBillionairesByCountry()
     
     }];      
     var layout = {
-        height: 500,
-        width: 500,
+        //height: 500,
+        //width: 500,
         showlegend: false,
         title: "Relationship Status",
         grid: {rows: 1, columns:2},
@@ -310,8 +310,8 @@ async function loadBillionairesByCountry()
                     xaxis: {
                         tickangle: -25
                       },
-                    width: 500,
-                    height: 500,
+                    //width: 500,
+                    //height: 500,
                     };
       
     Plotly.newPlot('myChart', bar, layout2);
